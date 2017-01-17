@@ -1,8 +1,114 @@
 # Table of Contents
+
+0. [Chapter 0 : Plugins](#chapter-0)
 1. [Chapter 1 : Key CI/CD/Jenkins Concepts](#chapter-1)
 2. [Chapter 2 : Jenkins usage (features and functionality)](#chapter-2)
 3. [Chapter 3 : Building Continuous Delivery (CD) Pipelines](#chapter-3)
 3. [Chapter 4 : CD-as-Code Best Practices](#chapter-4)
+
+<a name="chapter-0"></a>
+Chapter 0 : Plugins 
+===================
+Amazon EC2 Plugin
+-----------------
+TODO
+
+Build Pipeline Plugin
+-----------------
+TODO
+
+CloudBees Docker Build and Publish Plugin
+-----------------
+TODO
+
+CloudBees Folders Plugin
+-----------------
+TODO
+
+Copy Artifact Plugin
+-----------------
+TODO
+
+Credentials Plugin
+-----------------
+TODO
+
+Delivery Pipeline Plugin
+-----------------
+TODO
+
+Disk Usage Plugin
+-----------------
+TODO
+
+Docker Plugin
+-----------------
+TODO
+
+Email-ext Plugin
+-----------------
+TODO
+
+Fingerprint Plugin
+-----------------
+TODO
+
+Git Plugin
+-----------------
+TODO
+
+Mailer Plugin
+-----------------
+TODO
+
+IRC Plugin
+-----------------
+TODO
+
+JUnit Plugin
+-----------------
+TODO
+
+Jabber Plugin
+-----------------
+TODO
+
+Matrix Project Plugin
+-----------------
+TODO
+
+NodeLabel Parameter Plugin
+-----------------
+TODO
+
+Parameterized Trigger Plugin
+-----------------
+TODO
+
+Pipeline Plugin (formerly known as Workflow)
+-----------------
+TODO
+
+Promoted Builds Plugin
+-----------------
+TODO
+
+Radiator View Plugin
+-----------------
+TODO
+
+SMS Notification Plugin
+-----------------
+TODO
+
+Script Security Plugin
+-----------------
+TODO
+
+Skype Plugin
+-----------------
+TODO
+
 
 <a name="chapter-1"></a>
 Chapter 1 : Key CI/CD/Jenkins Concepts 
