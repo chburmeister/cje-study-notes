@@ -4,8 +4,8 @@
 3. [Chapter 3 : Building Continuous Delivery (CD) Pipelines](#chapter-3)
 3. [Chapter 4 : CD-as-Code Best Practices](#chapter-4)
 
-
-Chapter 1 : Key CI/CD/Jenkins Concepts <a name="chapter-1"></a>
+<a name="chapter-1"></a>
+Chapter 1 : Key CI/CD/Jenkins Concepts 
 ======================================
 Resources
 ---------
@@ -189,10 +189,8 @@ Using 3rd party tools
 ### How to use 3rd party tools with Jenkins
 TODO
 
-
-
-
-Chapter 2 : Jenkins usage (features and functionality)<a name="chapter-2"></a>
+<a name="chapter-2"></a>
+Chapter 2 : Jenkins usage (features and functionality)
 ======================================================
 Resources
 ---------
@@ -348,8 +346,8 @@ TODO
 ### Troubleshooting specific problems from build and test failure alerts
 TODO
 
-
-Chapter 3 : Building Continuous Delivery (CD) Pipelines<a name="chapter-3"></a>
+<a name="chapter-3"></a>
+Chapter 3 : Building Continuous Delivery (CD) Pipelines
 =======================================================
 Resources
 ---------
@@ -500,8 +498,8 @@ Notifications
 ### How to radiate information on CD pipelines to teams
 TODO
 
-
-Chapter 4 : CD-as-Code Best Practices<a name="chapter-4"></a>
+<a name="chapter-4"></a>
+Chapter 4 : CD-as-Code Best Practices
 =====================================
 Resources
 ---------
