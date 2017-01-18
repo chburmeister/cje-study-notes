@@ -229,7 +229,24 @@ Continuous Delivery/Continuous Integration Concepts
 TODO
 
 ### Stages of CI and CD
-TODO
+The	commit	stage	asserts	that	the	system	works	at	the	technical	level.	It
+compiles,	passes	a	suite	of	(primarily	unit-level)	automated	tests,	and	runs	code
+analysis.
+
+Automated	acceptance	test	stages	assert	that	the	system	works	at	the	functional
+and	nonfunctional	level,	that	behaviorally	it	meets	the	needs	of	its	users	and	the
+specifications	of	the	customer.
+
+Manual	test	stages	assert	that	the	system	is	usable	and	fulfills	its	requirements,
+detect	any	defects	not	caught	by	automated	tests,	and	verify	that	it	provides	value
+to	its	users.	These	stages	might	typically	include	exploratory	testing	environments,
+integration	environments,	and	UAT	(user	acceptance	testing)
+
+Release	stage	delivers	the	system	to	users,	either	as	packaged	software	or	by
+deploying	it	into	a	production	or	staging	environment	(a	staging	environment	is	a
+testing	environment	identical	to	the	production	environment).
+
+
 
 ### Continuous delivery versus continuous deployment
 TODO
