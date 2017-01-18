@@ -339,11 +339,18 @@ TODO
 
 Fingerprints
 ------------
+* https://wiki.jenkins-ci.org/display/JENKINS/Fingerprint
 ### What are fingerprints?
-TODO
+The fingerprint of a file is simply a MD5 checksum. Jenkins maintains a database of md5sum, and for each md5sum, Jenkins records which builds of which projects used. This database is updated every time a build runs and files are fingerprinted.
+
+To avoid the excessive disk usage, Jenkins does not store the actual file. Instead, it just stores md5sum and their usages. These files can be seen in $JENKINS_HOME/fingerprints
+
+Plugins can store additional information in these records. For example, Deployment Notification Plugin tracks files deployed on servers via chef/puppet through fingerprints.
 
 ### How do fingerprints work?
-TODO
+When you have interdependent projects on Jenkins, it often becomes hard to keep track of which version of a file is used by which version of a dependency on that file. Jenkins supports file fingerprinting to track dependencies.
+
+For example, suppose you have the TOP project that depends on the MIDDLE project, which in turn depends on the BOTTOM project. You are working on the BOTTOM project. The TOP team reported that bottom.jar that they are using causes an NPE, which you (a member of the BOTTOM team) thought you fixed in BOTTOM #32. Jenkins can tell you which MIDDLE builds and TOP builds are using (or not using) your bottom.jar #32.
 
 Artifacts
 ---------
