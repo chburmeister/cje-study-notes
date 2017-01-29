@@ -63,10 +63,25 @@ TODO
 Jobs
 ----
 ### What are jobs in Jenkins?
-TODO
+Synonymous with project.
+Projects are containers for executing buildsteps. It consists of the following elements:
+
+* optional SCM, such as CVS or Subversion where your source code resides.
+* optional triggers to control when Jenkins will perform builds.
+* some sort of build script that performs the build (ant, maven, shell script, batch file, etc.) where the real work happens
+* optional steps to collect information out of the build, such as archiving the artifacts and/or recording javadoc and test results.
+* optional steps to notify other people/systems with the build result, such as sending e-mails, IMs, updating issue tracker, etc.
+
+In Jenkins 2: A user-defined model of a continuous delivery pipeline.
 
 ### Types of jobs
-TODO
+
+* Freestyle job : Freestyle build jobs are general-purpose build jobs, which provides a maximum of flexibility.
+* Maven job : The “maven2/3 project” is a build job specially adapted to Maven projects. Jenkins understands Maven pom files and project structures, and can use the information gleaned from the pom file to reduce the work you need to do to set up your project.
+* Monitor an external job: The “Monitor an external job” build job lets you keep an eye on non-interactive processes, such as cron jobs.
+* Multiconfiguration job: aka “matrix project”, lets you run the same build job in many different configurations. This powerful feature can be useful for testing an application in many different environments, with different databases, or even on different build machines
+* Copy existing job: creates a job identical to the given one, but you have to change the name.
+
 
 ### Scope of jobs
 TODO
@@ -74,10 +89,14 @@ TODO
 Builds
 ------
 ### What are builds in Jenkins?
-TODO
+Result of a single execution of a Project.
 
 ### What are build steps, triggers, artifacts, and repositories?
-TODO
+
+* Steps: A single task; fundamentally steps tell Jenkins what to do inside of Project.
+* Triggers: A criteria for triggering a new Build.
+* Artifacts: An immutable file generated during a Build which is archived onto the Jenkins Master for later retrieval by users.
+* Repositories: TODO: scm or mvn ?
 
 ### Build tools configuration
 TODO
