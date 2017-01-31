@@ -5,7 +5,7 @@ Resources
 * http://www.martinfowler.com/articles/continuousIntegration.html
 * http://martinfowler.com/bliki/ContinuousDelivery.html
 * http://martinfowler.com/bliki/DeploymentPipeline.html
-* http://www.informit.com/articles/article.aspx?p=1621865&seqNum=2
+* http://www.informit.com/articles/article.aspx?p=1621865&seqNum=2 
 * http://devops.com/2014/07/29/continuous-delivery-pipeline/
 * https://jaxenter.com/implementing-continuous-delivery-117916.html
 * http://www.infoq.com/articles/orch-pipelines-jenkins
@@ -143,29 +143,46 @@ Notifications
 -------------
 ### Types of notifications in Jenkins
 * Email: 
-** well-known
-** easy to use and easy to configure
+ * well-known
+ * easy to use and easy to configure
 * Advanced Email: 
-** Email-ext plugin
-** define a more refined email notification strategy
+ * Email-ext plugin
+ * define a more refined email notification strategy
 * Claiming Builds: 
-** Claim plugin
-** lets developers indicate that they have taken ownership of the broken build, and are attempting to fix it
-* RSS-Feeds: overall build results across all of your builds (or just the builds on a particular view), or build results for a specific build.
-* Build Radiators: commonly used in Agile circles:
+ * Claim plugin
+ * lets developers indicate that they have taken ownership of the broken build, and are attempting to fix it
+* RSS-Feeds: 
+ * overall build results across all of your builds (or just the builds on a particular view)
+ * or build results for a specific build.
+* Build Radiators: 
+ * commonly used in Agile circles:
 
 >An Information radiator is a display posted in a place where people can see it as they
 >work or walk by. It shows readers information they care about without having to ask
 >anyone a question. This means more communication with fewer interruptions.
 >... Agile guru Alistair Cockburn
 
-* IM - Jabber: Jabber, an open source, XML-based instant messaging protocol, developers can receive real-time notification of build failures --> or Jenkins can run an IM bot that listens to the chat channels and lets developers run commands on the Jenkins server via chat messages.
-* IM - IRC: IRC is traditionally focused on group discussions
-* Desktop Notifiers: best push notification strategies integrate smoothly into the developer’s daily work environment, Jenkins Tray Application plugin or Jenkins Eclipse Plugin
-* Mobile: you can also monitor your builds via your iPhone or Android mobile device (e.g. Android widget Hudson Mood)
-* SMS: popular among system administrators, main disadvantage of this approach is arguably that it is not free, and requires the use of a third-party commercial service, only notification technique capable of reaching developers when they are out of Internet range or who do not have a data-enabled smartphone.
+* IM - Jabber: 
+ * Jabber, an open source, XML-based instant messaging protocol
+ * developers can receive real-time notification of build failures 
+ * --> or Jenkins can run an IM bot that listens to the chat channels and lets developers run commands on the Jenkins server via chat messages.
+* IM - IRC: 
+ * IRC is traditionally focused on group discussions
+* Desktop Notifiers: 
+ * best push notification strategies integrate smoothly into the developer’s daily work environment
+ * Jenkins Tray Application plugin or Jenkins Eclipse Plugin
+* Mobile:  
+ * you can also monitor your builds via your iPhone or Android mobile device (e.g. Android widget Hudson Mood)
+* SMS: 
+ * popular among system administrators, 
+ * main disadvantage of this approach is arguably that it is not free, and requires the use of a third-party commercial service, 
+ * only notification technique capable of reaching developers when they are out of Internet range or who do not have a data-enabled smartphone.
 * Noise
+ * Jenkins Sounds plugin and the Jenkins Speaks plugin
+ * effective strategy for small co-located teams
+ * For example, you can configure Jenkins to play one sound the first time a build fails, a different sound if the build fails a second time, and yet another sound when the build is fixed
 * EFD - Extreme Feedback Devices
+ * Nabaztag --> popular WiFi-enabled robotic rabbit that can flash colored lights, play music, or even speak
 
 ### Importance of notifications
 There are 2 types of notifications: active and passive (or better: push and pull).
