@@ -142,10 +142,36 @@ TODO
 Notifications
 -------------
 ### Types of notifications in Jenkins
-TODO
+* Email: 
+** well-known
+** easy to use and easy to configure
+* Advanced Email: 
+** Email-ext plugin
+** define a more refined email notification strategy
+* Claiming Builds: 
+** Claim plugin
+** lets developers indicate that they have taken ownership of the broken build, and are attempting to fix it
+* RSS-Feeds: overall build results across all of your builds (or just the builds on a particular view), or build results for a specific build.
+* Build Radiators: commonly used in Agile circles:
+
+>An Information radiator is a display posted in a place where people can see it as they
+>work or walk by. It shows readers information they care about without having to ask
+>anyone a question. This means more communication with fewer interruptions.
+>... Agile guru Alistair Cockburn
+
+* IM - Jabber: Jabber, an open source, XML-based instant messaging protocol, developers can receive real-time notification of build failures --> or Jenkins can run an IM bot that listens to the chat channels and lets developers run commands on the Jenkins server via chat messages.
+* IM - IRC: IRC is traditionally focused on group discussions
+* Desktop Notifiers: best push notification strategies integrate smoothly into the developer’s daily work environment, Jenkins Tray Application plugin or Jenkins Eclipse Plugin
+* Mobile: you can also monitor your builds via your iPhone or Android mobile device (e.g. Android widget Hudson Mood)
+* SMS: popular among system administrators, main disadvantage of this approach is arguably that it is not free, and requires the use of a third-party commercial service, only notification technique capable of reaching developers when they are out of Internet range or who do not have a data-enabled smartphone.
+* Noise
+* EFD - Extreme Feedback Devices
 
 ### Importance of notifications
-TODO
+There are 2 types of notifications: active and passive (or better: push and pull).
+The CI-server must let the right people know any new issues as fast as possible.
+Passive strategies like as build radiators lead to higher awareness about failing builds and care for fixing broken builds with higher priority. Active notifications encourage developers to take matters into their own hands and fix broken builds 
+quickly.
 
 Distributed Builds
 ------------------
